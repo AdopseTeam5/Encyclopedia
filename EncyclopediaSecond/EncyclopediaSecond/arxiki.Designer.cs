@@ -118,7 +118,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1026, 794);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Αρχικη Σελιδα";
+            this.tabPage1.Text = "Αρχική Σελίδα";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox4
@@ -136,7 +136,7 @@
             this.groupBox4.Size = new System.Drawing.Size(1004, 272);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Τυχαια λημματα";
+            this.groupBox4.Text = "Τυχαία λήμματα";
             // 
             // tableLayoutPanel9
             // 
@@ -146,7 +146,7 @@
             this.tableLayoutPanel9.Controls.Add(this.pictureBox9, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.label18, 0, 1);
             this.tableLayoutPanel9.Controls.Add(this.label19, 0, 2);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(575, 16);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(693, 56);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 3;
@@ -198,7 +198,7 @@
             this.tableLayoutPanel8.Controls.Add(this.pictureBox8, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.label16, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.label17, 0, 2);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(272, 16);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(360, 69);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
@@ -242,6 +242,7 @@
             this.label17.TabIndex = 2;
             this.label17.Text = "Κειμενο";
             this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // tableLayoutPanel7
             // 
@@ -251,7 +252,7 @@
             this.tableLayoutPanel7.Controls.Add(this.pictureBox7, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.label14, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.label15, 0, 2);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(8, 43);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(58, 56);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
@@ -311,7 +312,7 @@
             this.groupBox3.Size = new System.Drawing.Size(1004, 281);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Σαν σημερα";
+            this.groupBox3.Text = "Σαν Σήμερα";
             // 
             // tableLayoutPanel6
             // 
@@ -321,7 +322,7 @@
             this.tableLayoutPanel6.Controls.Add(this.pictureBox6, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.label12, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.label13, 0, 2);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(343, 23);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(403, 48);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
@@ -373,7 +374,7 @@
             this.tableLayoutPanel5.Controls.Add(this.pictureBox5, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label11, 0, 2);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(617, 62);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(749, 48);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
@@ -425,7 +426,7 @@
             this.tableLayoutPanel4.Controls.Add(this.pictureBox4, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label8, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label9, 0, 2);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(17, 23);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(51, 33);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
@@ -484,7 +485,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1004, 272);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Αγαπημενα";
+            this.groupBox1.Text = "Αγαπημένα";
             // 
             // tableLayoutPanel3
             // 
@@ -494,7 +495,7 @@
             this.tableLayoutPanel3.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label6, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label7, 0, 2);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(524, 21);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(678, 21);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
@@ -546,7 +547,7 @@
             this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(267, 21);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(328, 23);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
@@ -653,7 +654,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Καλως ηρθατε στη Εγκυκλοπαίδεια";
+            this.label1.Text = "Καλώς ήρθατε στη Εγκυκλοπαίδεια";
             // 
             // arxiki
             // 

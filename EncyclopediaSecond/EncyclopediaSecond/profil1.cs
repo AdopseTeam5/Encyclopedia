@@ -55,5 +55,35 @@ namespace EncyclopediaSecond
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+
+            // ean patisei ektypwsi tha vazei sto panel4 to usercontrol EktyposiBook
+            panel4.Controls.Clear();
+
+            EktypisoBook eb = new EktypisoBook();
+            eb.Show();
+            panel4.Controls.Add(eb);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            //ean patisei provoli tha vazei sto panel4 to usercontrol ProvoliBook
+            
+            panel4.Controls.Clear();
+
+            ProvoliBook pb = new ProvoliBook();
+            pb.Show();
+            panel4.Controls.Add(pb);
+
+
+
+
+            
+        }
     }
 }

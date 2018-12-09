@@ -64,6 +64,7 @@
     <Compile Include="arxiki.Designer.cs">
       <DependentUpon>arxiki.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserManager.cs" />
     <Compile Include="Formlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +97,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvoliBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProvoliBook.Designer.cs">
+      <DependentUpon>ProvoliBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EktypisoBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EktypisoBook.Designer.cs">
+      <DependentUpon>EktypisoBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="XwrisSundesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XwrisSundesi.Designer.cs">
+      <DependentUpon>XwrisSundesi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Allagiemail.resx">
       <DependentUpon>Allagiemail.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +150,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ProvoliBook.resx">
+      <DependentUpon>ProvoliBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EktypisoBook.resx">
+      <DependentUpon>EktypisoBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XwrisSundesi.resx">
+      <DependentUpon>XwrisSundesi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -193,6 +222,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47685820_325792118241277_797400252331065344_n.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

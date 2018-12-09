@@ -103,26 +103,61 @@ namespace EncyclopediaSecond
 
         private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+
+            //edw ua ginete elegxos ean einai sundemenos o xristis i oxi ,wste na emfanizei to profil1 usercontrol i to XwrisSundesi
+            //if(den exei sundethei)
+            ///kwdikas gia emfanisi mi sundedemenou xristi
             panel1.Controls.Clear();
 
-            profil1 prof1 = new profil1();
-            prof1.Show();
-            panel1.Controls.Add(prof1);
+            XwrisSundesi xs = new XwrisSundesi();
+            xs.Show();
+            panel1.Controls.Add(xs);
 
 
 
 
-            
+            //kwdikas gia emfanisei sundedemenoy xristi
+            //else(exei sundethei)
+
+
+            //   panel1.Controls.Clear();
+
+            //    profil1 prof1 = new profil1();
+            //  prof1.Show();
+            //  panel1.Controls.Add(prof1);
+
+
+
+
+
 
         }
 
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
+
+
+            //edw ua ginete elegxos ean einai sundemenos o xristis i oxi ,wste na emfanizei to profil1 usercontrol i to XwrisSundesi
+            //if(den exei sundethei)
+            ///kwdikas gia emfanisi mi sundedemenou xristi
             panel1.Controls.Clear();
 
-            profil1 prof1 = new profil1();
-            prof1.Show();
-            panel1.Controls.Add(prof1);
+            XwrisSundesi xs = new XwrisSundesi();
+            xs.Show();
+            panel1.Controls.Add(xs);
+
+            
+            
+            
+            //kwdikas gia emfanisei sundedemenoy xristi
+          //else(exei sundethei)
+
+
+         //   panel1.Controls.Clear();
+
+        //    profil1 prof1 = new profil1();
+          //  prof1.Show();
+          //  panel1.Controls.Add(prof1);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -133,6 +168,14 @@ namespace EncyclopediaSecond
         private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Formkentriki_Activated(object sender, EventArgs e)
+        {
+            User user = UserManager.Shared.getCurrentUser();
+            if (user != null) {
+                this.toolStripLabel1.Text = user.getEmail();
+            }
         }
     }
 }

@@ -10,15 +10,18 @@ using System.Windows.Forms;
 
 namespace EncyclopediaSecond
 {
-    public partial class arxiki : UserControl
+    public partial class XwrisSundesi : UserControl
     {
-        public arxiki()
+        public XwrisSundesi()
         {
             InitializeComponent();
         }
 
-        private void label17_Click(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Formlogin f1 = new Formlogin();
+            f1.ShowDialog();
+
 
         }
     }

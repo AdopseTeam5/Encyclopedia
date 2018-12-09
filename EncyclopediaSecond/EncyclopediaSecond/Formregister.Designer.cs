@@ -97,12 +97,14 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Eγγραφή";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.textBox4.Location = new System.Drawing.Point(70, 330);
             this.textBox4.Name = "textBox4";
+            this.textBox4.PasswordChar = '*';
             this.textBox4.Size = new System.Drawing.Size(255, 29);
             this.textBox4.TabIndex = 8;
             // 
@@ -111,6 +113,7 @@
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.textBox5.Location = new System.Drawing.Point(70, 394);
             this.textBox5.Name = "textBox5";
+            this.textBox5.PasswordChar = '*';
             this.textBox5.Size = new System.Drawing.Size(255, 29);
             this.textBox5.TabIndex = 9;
             // 

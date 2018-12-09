@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace EncyclopediaSecond
 {
-    public partial class arxiki : UserControl
+    public partial class ProvoliBook : UserControl
     {
-        public arxiki()
+        public ProvoliBook()
         {
             InitializeComponent();
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -103,6 +103,7 @@
             this.loginbutton.TabIndex = 5;
             this.loginbutton.Text = "Eίσοδος";
             this.loginbutton.UseVisualStyleBackColor = true;
+            this.loginbutton.Click += new System.EventHandler(this.loginbutton_Click);
             // 
             // checkBox1
             // 

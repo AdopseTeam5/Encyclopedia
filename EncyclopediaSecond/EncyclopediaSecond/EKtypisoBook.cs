@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace EncyclopediaSecond
 {
-    public partial class arxiki : UserControl
+    public partial class EktypisoBook : UserControl
     {
-        public arxiki()
+        public EktypisoBook()
         {
             InitializeComponent();
         }
 
-        private void label17_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

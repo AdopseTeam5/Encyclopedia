@@ -30,5 +30,11 @@ namespace EncyclopediaSecond
             Formregister f5 = new Formregister();
             f5.ShowDialog();
         }
+
+        private void loginbutton_Click(object sender, EventArgs e)
+        {
+            User user = new User("testMail", "testPass");
+            UserManager.Shared.setUpCurrentUser(user);
+        }
     }
 }

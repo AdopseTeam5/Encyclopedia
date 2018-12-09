@@ -30,5 +30,10 @@ namespace EncyclopediaSecond
         private void Formregister_FormClosed(object sender, FormClosedEventArgs e)
         {
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
