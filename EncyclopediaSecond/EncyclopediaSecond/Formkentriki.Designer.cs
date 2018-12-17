@@ -34,7 +34,6 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -48,6 +47,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.aposundesi = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -62,7 +63,8 @@
             this.toolStripButton3,
             this.toolStripSeparator1,
             this.toolStripButton2,
-            this.toolStripSeparator2,
+            this.aposundesi,
+            this.toolStripSeparator3,
             this.toolStripLabel1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -97,12 +99,6 @@
             this.toolStripButton2.Size = new System.Drawing.Size(212, 27);
             this.toolStripButton2.Text = "Δημιουργία Λογαριασμού";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 30);
             // 
             // toolStripLabel1
             // 
@@ -246,6 +242,24 @@
             this.pictureBox10.TabIndex = 6;
             this.pictureBox10.TabStop = false;
             // 
+            // aposundesi
+            // 
+            this.aposundesi.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.aposundesi.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.aposundesi.Image = ((System.Drawing.Image)(resources.GetObject("aposundesi.Image")));
+            this.aposundesi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.aposundesi.Name = "aposundesi";
+            this.aposundesi.Size = new System.Drawing.Size(111, 27);
+            this.aposundesi.Text = "Αποσύνδεση";
+            this.aposundesi.Visible = false;
+            this.aposundesi.Click += new System.EventHandler(this.toolStripButton1_Click_2);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 30);
+            // 
             // Formkentriki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -292,9 +306,10 @@
         private System.Windows.Forms.LinkLabel linkLabel8;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripButton aposundesi;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }
 

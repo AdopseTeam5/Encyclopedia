@@ -174,8 +174,20 @@ namespace EncyclopediaSecond
         {
             User user = UserManager.Shared.getCurrentUser();
             if (user != null) {
+
+                //kwdikas ean exei sundethei na allazei to menu
                 this.toolStripLabel1.Text = user.getEmail();
+                aposundesi.Visible = true;
+                toolStripButton2.Visible = false;
+                toolStripButton3.Visible = false;
+                toolStripSeparator1.Visible = false;
+
             }
+        }
+
+        private void toolStripButton1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }
