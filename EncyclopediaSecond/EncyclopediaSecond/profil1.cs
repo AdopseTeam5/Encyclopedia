@@ -15,6 +15,11 @@ namespace EncyclopediaSecond
         public profil1()
         {
             InitializeComponent();
+            panel3.Controls.Clear();
+
+            AllagiKwdikou ak = new AllagiKwdikou();
+            ak.Show();
+            panel3.Controls.Add(ak);
         }
 
         private void label28_Click(object sender, EventArgs e)
