@@ -19,9 +19,19 @@ namespace EncyclopediaSecond
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Formlogin f1 = new Formlogin();
-            f1.ShowDialog();
+           
 
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            FormLogin2 f1 = new FormLogin2();
+            f1.Show();
 
         }
     }

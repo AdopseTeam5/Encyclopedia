@@ -12,15 +12,19 @@ namespace EncyclopediaSecond
 {
     public partial class Formkentriki : Form
     {
+
+      
+
         public Formkentriki()
         {
             InitializeComponent();
+           
             //adiazei to panel
-            panel1.Controls.Clear();
+            MainPanel.Controls.Clear();
 
             arxiki ar = new arxiki();
             ar.Show();
-            panel1.Controls.Add(ar);
+            MainPanel.Controls.Add(ar);
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -30,7 +34,8 @@ namespace EncyclopediaSecond
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-           Formlogin f1 = new Formlogin();
+            // Formlogin f1 = new Formlogin();
+            FormLogin2 f1 = new FormLogin2();
             f1.ShowDialog();
         }
 
@@ -41,7 +46,8 @@ namespace EncyclopediaSecond
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            Formregister f1 = new Formregister();
+            //Formregister f1 = new Formregister();
+            FormRegister2 f1 = new FormRegister2();
             f1.ShowDialog();
         }
 
@@ -94,11 +100,11 @@ namespace EncyclopediaSecond
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //adiazei to panel
-            panel1.Controls.Clear();
+            MainPanel.Controls.Clear();
 
            arxiki ar = new arxiki();
             ar.Show();
-            panel1.Controls.Add(ar);
+            MainPanel.Controls.Add(ar);
         }
 
         private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -107,11 +113,11 @@ namespace EncyclopediaSecond
             //edw ua ginete elegxos ean einai sundemenos o xristis i oxi ,wste na emfanizei to profil1 usercontrol i to XwrisSundesi
             //if(den exei sundethei)
             ///kwdikas gia emfanisi mi sundedemenou xristi
-            panel1.Controls.Clear();
+            MainPanel.Controls.Clear();
 
             XwrisSundesi xs = new XwrisSundesi();
             xs.Show();
-            panel1.Controls.Add(xs);
+            MainPanel.Controls.Add(xs);
 
 
 
@@ -140,11 +146,11 @@ namespace EncyclopediaSecond
             //edw ua ginete elegxos ean einai sundemenos o xristis i oxi ,wste na emfanizei to profil1 usercontrol i to XwrisSundesi
             //if(den exei sundethei)
             ///kwdikas gia emfanisi mi sundedemenou xristi
-            panel1.Controls.Clear();
+            MainPanel.Controls.Clear();
 
             XwrisSundesi xs = new XwrisSundesi();
             xs.Show();
-            panel1.Controls.Add(xs);
+            MainPanel.Controls.Add(xs);
 
             
             
@@ -176,6 +182,97 @@ namespace EncyclopediaSecond
             if (user != null) {
                 this.toolStripLabel1.Text = user.getEmail();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logopanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupboxpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialFlatButton3_Click(object sender, EventArgs e)
+        {
+
+            //edw ua ginete elegxos ean einai sundemenos o xristis i oxi ,wste na emfanizei to profil1 usercontrol i to XwrisSundesi
+            //if(den exei sundethei)
+            ///kwdikas gia emfanisi mi sundedemenou xristi
+            MainPanel.Controls.Clear();
+
+            XwrisSundesi xs = new XwrisSundesi();
+            xs.Show();
+            MainPanel.Controls.Add(xs);
+
+
+
+
+            //kwdikas gia emfanisei sundedemenoy xristi
+            //else(exei sundethei)
+
+
+            //   panel1.Controls.Clear();
+
+            //    profil1 prof1 = new profil1();
+            //  prof1.Show();
+            //  panel1.Controls.Add(prof1);
+
+
+
+
+        }
+
+        private void materialFlatButton2_Click(object sender, EventArgs e)
+        {
+            //adiazei to panel
+            MainPanel.Controls.Clear();
+
+            arxiki ar = new arxiki();
+            ar.Show();
+            MainPanel.Controls.Add(ar);
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }
