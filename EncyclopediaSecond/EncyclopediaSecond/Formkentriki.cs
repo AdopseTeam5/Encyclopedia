@@ -107,11 +107,11 @@ namespace EncyclopediaSecond
             //edw ua ginete elegxos ean einai sundemenos o xristis i oxi ,wste na emfanizei to profil1 usercontrol i to XwrisSundesi
             //if(den exei sundethei)
             ///kwdikas gia emfanisi mi sundedemenou xristi
-            panel1.Controls.Clear();
+            //panel1.Controls.Clear();
 
-            XwrisSundesi xs = new XwrisSundesi();
-            xs.Show();
-            panel1.Controls.Add(xs);
+            //XwrisSundesi xs = new XwrisSundesi();
+            //xs.Show();
+           // panel1.Controls.Add(xs);
 
 
 
@@ -120,11 +120,11 @@ namespace EncyclopediaSecond
             //else(exei sundethei)
 
 
-            //   panel1.Controls.Clear();
-
-            //    profil1 prof1 = new profil1();
-            //  prof1.Show();
-            //  panel1.Controls.Add(prof1);
+              panel1.Controls.Clear();
+        
+                profil1 prof1 = new profil1();
+              prof1.Show();
+              panel1.Controls.Add(prof1);
 
 
 
@@ -174,8 +174,20 @@ namespace EncyclopediaSecond
         {
             User user = UserManager.Shared.getCurrentUser();
             if (user != null) {
+
+                //kwdikas ean exei sundethei na allazei to menu
                 this.toolStripLabel1.Text = user.getEmail();
+                aposundesi.Visible = true;
+                toolStripButton2.Visible = false;
+                toolStripButton3.Visible = false;
+                toolStripSeparator1.Visible = false;
+
             }
+        }
+
+        private void toolStripButton1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }
