@@ -8,28 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-
 namespace EncyclopediaSecond
 {
-    public partial class FormEpanafora2 : MaterialSkin.Controls.MaterialForm
+    public partial class Formepanaf : Form
     {
-        public FormEpanafora2()
+        public Formepanaf()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Formepanaf_FormClosed(object sender, FormClosedEventArgs e)
         {
-
-        }
-        private void FormEpanfora_FormClosed(object sender, FormClosedEventArgs e) {
-
             this.Hide();
-            FormLogin2 f1 = new FormLogin2();
+            Formlogin f1 = new Formlogin();
             f1.ShowDialog();
         }
-        private void materialSingleLineTextField1_Click(object sender, EventArgs e)
+
+        private void Formepanaf_Load(object sender, EventArgs e)
         {
 
         }

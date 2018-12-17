@@ -33,18 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -76,36 +64,36 @@
     <Compile Include="arxiki.Designer.cs">
       <DependentUpon>arxiki.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEpanafora2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEpanafora2.Designer.cs">
-      <DependentUpon>FormEpanafora2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormLogin2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLogin2.Designer.cs">
-      <DependentUpon>FormLogin2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormRegister2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRegister2.Designer.cs">
-      <DependentUpon>FormRegister2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="profil2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="profil2.Designer.cs">
-      <DependentUpon>profil2.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserManager.cs" />
+    <Compile Include="Formlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlogin.Designer.cs">
+      <DependentUpon>Formlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formregister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formregister.Designer.cs">
+      <DependentUpon>Formregister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formepanaf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formepanaf.Designer.cs">
+      <DependentUpon>Formepanaf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formkentriki.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formkentriki.Designer.cs">
       <DependentUpon>Formkentriki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profil1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="profil1.Designer.cs">
+      <DependentUpon>profil1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,20 +125,20 @@
     <EmbeddedResource Include="arxiki.resx">
       <DependentUpon>arxiki.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormEpanafora2.resx">
-      <DependentUpon>FormEpanafora2.cs</DependentUpon>
+    <EmbeddedResource Include="Formlogin.resx">
+      <DependentUpon>Formlogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin2.resx">
-      <DependentUpon>FormLogin2.cs</DependentUpon>
+    <EmbeddedResource Include="Formregister.resx">
+      <DependentUpon>Formregister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formepanaf.resx">
+      <DependentUpon>Formepanaf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formkentriki.resx">
       <DependentUpon>Formkentriki.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRegister2.resx">
-      <DependentUpon>FormRegister2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="profil2.resx">
-      <DependentUpon>profil2.cs</DependentUpon>
+    <EmbeddedResource Include="profil1.resx">
+      <DependentUpon>profil1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -171,7 +159,6 @@
     <EmbeddedResource Include="XwrisSundesi.resx">
       <DependentUpon>XwrisSundesi.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
