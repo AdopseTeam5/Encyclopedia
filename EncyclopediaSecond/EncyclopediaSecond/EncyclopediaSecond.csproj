@@ -64,6 +64,17 @@
     <Compile Include="arxiki.Designer.cs">
       <DependentUpon>arxiki.cs</DependentUpon>
     </Compile>
+    <Compile Include="OPENXMLTestingDataSet.cs">
+      <DependentUpon>OPENXMLTestingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OPENXMLTestingDataSet.designer.cs">
+      <DependentUpon>OPENXMLTestingDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPENXMLTestingDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPENXMLTestingDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UserManager.cs" />
     <Compile Include="Formlogin.cs">
       <SubType>Form</SubType>
@@ -159,6 +170,17 @@
     <EmbeddedResource Include="XwrisSundesi.resx">
       <DependentUpon>XwrisSundesi.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="OPENXMLTestingDataSet.xsc">
+      <DependentUpon>OPENXMLTestingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OPENXMLTestingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPENXMLTestingDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OPENXMLTestingDataSet.xss">
+      <DependentUpon>OPENXMLTestingDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
