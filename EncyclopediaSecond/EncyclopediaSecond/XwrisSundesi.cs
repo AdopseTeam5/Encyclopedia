@@ -19,7 +19,7 @@ namespace EncyclopediaSecond
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Formlogin f1 = new Formlogin();
+            FormLoginV2 f1 = new FormLoginV2();
             f1.ShowDialog();
 
 
