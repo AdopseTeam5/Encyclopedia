@@ -88,6 +88,9 @@
     <Compile Include="arxiki.Designer.cs">
       <DependentUpon>arxiki.cs</DependentUpon>
     </Compile>
+    <Compile Include="OPENXMLTestingDataSet.cs">
+      <DependentUpon>OPENXMLTestingDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="OPENXMLTestingDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
