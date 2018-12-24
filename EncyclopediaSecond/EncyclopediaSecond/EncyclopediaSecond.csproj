@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,12 +63,6 @@
     </Compile>
     <Compile Include="arxiki.Designer.cs">
       <DependentUpon>arxiki.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormLoginV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLoginV2.Designer.cs">
-      <DependentUpon>FormLoginV2.cs</DependentUpon>
     </Compile>
     <Compile Include="UserManager.cs" />
     <Compile Include="Formlogin.cs">
@@ -137,9 +128,6 @@
     <EmbeddedResource Include="Formlogin.resx">
       <DependentUpon>Formlogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLoginV2.resx">
-      <DependentUpon>FormLoginV2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formregister.resx">
       <DependentUpon>Formregister.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,7 +159,6 @@
     <EmbeddedResource Include="XwrisSundesi.resx">
       <DependentUpon>XwrisSundesi.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
