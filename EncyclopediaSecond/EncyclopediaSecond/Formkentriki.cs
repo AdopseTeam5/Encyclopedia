@@ -177,5 +177,25 @@ namespace EncyclopediaSecond
                 this.toolStripLabel1.Text = user.getEmail();
             }
         }
+
+        /*
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            panel1.Controls.Clear();
+
+            TyxaioLimma xs = new TyxaioLimma();
+            xs.Show();
+            panel1.Controls.Add(xs);
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            panel1.Controls.Clear();
+
+            SanSimera xs = new SanSimera();
+            xs.Show();
+            panel1.Controls.Add(xs);
+        }
+        */
     }
 }

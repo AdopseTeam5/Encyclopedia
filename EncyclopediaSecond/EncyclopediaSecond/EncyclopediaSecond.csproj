@@ -64,6 +64,24 @@
     <Compile Include="arxiki.Designer.cs">
       <DependentUpon>arxiki.cs</DependentUpon>
     </Compile>
+    <Compile Include="KatalogosLimmatwn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KatalogosLimmatwn.Designer.cs">
+      <DependentUpon>KatalogosLimmatwn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanSimera.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SanSimera.Designer.cs">
+      <DependentUpon>SanSimera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TyxaioLimma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TyxaioLimma.Designer.cs">
+      <DependentUpon>TyxaioLimma.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserManager.cs" />
     <Compile Include="Formlogin.cs">
       <SubType>Form</SubType>
@@ -137,6 +155,9 @@
     <EmbeddedResource Include="Formkentriki.resx">
       <DependentUpon>Formkentriki.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KatalogosLimmatwn.resx">
+      <DependentUpon>KatalogosLimmatwn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="profil1.resx">
       <DependentUpon>profil1.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +176,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EktypisoBook.resx">
       <DependentUpon>EktypisoBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanSimera.resx">
+      <DependentUpon>SanSimera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TyxaioLimma.resx">
+      <DependentUpon>TyxaioLimma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XwrisSundesi.resx">
       <DependentUpon>XwrisSundesi.cs</DependentUpon>
