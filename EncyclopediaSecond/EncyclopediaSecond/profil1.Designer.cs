@@ -31,6 +31,12 @@
             System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Αλέξανδρος ο Μέγας");
             System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Μάχη του Κάλλοντεν");
             System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Κριτήριο της αμηχανίας");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            "megas al",
+            "",
+            ""}, -1);
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("arxaia ellada");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("muthoi");
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -81,12 +87,35 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.Kleisimo = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.apoews = new System.Windows.Forms.RadioButton();
+            this.apo = new System.Windows.Forms.NumericUpDown();
+            this.all = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.onesel = new System.Windows.Forms.NumericUpDown();
+            this.ews = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.one = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Ektup = new System.Windows.Forms.Button();
+            this.Provoli = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.neasim = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl2.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -110,9 +139,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.apo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onesel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ews)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage7.SuspendLayout();
+            this.neasim.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,6 +191,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1055, 514);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox11
             // 
@@ -235,6 +269,7 @@
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "Αγαπημένα";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // panel5
             // 
@@ -252,7 +287,7 @@
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1059, 522);
+            this.panel5.Size = new System.Drawing.Size(1005, 587);
             this.panel5.TabIndex = 0;
             // 
             // pictureBox14
@@ -344,7 +379,7 @@
             // 
             this.panel6.Controls.Add(this.button6);
             this.panel6.Controls.Add(this.button5);
-            this.panel6.Location = new System.Drawing.Point(309, 171);
+            this.panel6.Location = new System.Drawing.Point(297, 162);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(223, 96);
@@ -364,7 +399,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(0, 4);
+            this.button5.Location = new System.Drawing.Point(0, 11);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -537,10 +572,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.74627F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button2.Location = new System.Drawing.Point(94, 265);
+            this.button2.Location = new System.Drawing.Point(83, 266);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 32);
+            this.button2.Size = new System.Drawing.Size(200, 37);
             this.button2.TabIndex = 1;
             this.button2.Text = "Αλλαγή Email";
             this.button2.UseVisualStyleBackColor = true;
@@ -580,6 +615,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1025, 623);
             this.panel8.TabIndex = 0;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // pictureBox1
             // 
@@ -639,10 +675,10 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(134, 289);
+            this.button10.Location = new System.Drawing.Point(134, 278);
             this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(140, 28);
+            this.button10.Size = new System.Drawing.Size(139, 29);
             this.button10.TabIndex = 4;
             this.button10.Text = "ΠΡΟΒΟΛΗ";
             this.button10.UseVisualStyleBackColor = true;
@@ -721,9 +757,10 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.Kleisimo);
             this.tabPage6.Controls.Add(this.panel4);
-            this.tabPage6.Controls.Add(this.button3);
-            this.tabPage6.Controls.Add(this.button1);
+            this.tabPage6.Controls.Add(this.Ektup);
+            this.tabPage6.Controls.Add(this.Provoli);
             this.tabPage6.Controls.Add(this.pictureBox3);
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
@@ -733,44 +770,219 @@
             this.tabPage6.Text = "MyBook";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // Kleisimo
+            // 
+            this.Kleisimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Kleisimo.Location = new System.Drawing.Point(864, 563);
+            this.Kleisimo.Name = "Kleisimo";
+            this.Kleisimo.Size = new System.Drawing.Size(137, 45);
+            this.Kleisimo.TabIndex = 4;
+            this.Kleisimo.Text = "Κλείσιμο";
+            this.Kleisimo.UseVisualStyleBackColor = true;
+            this.Kleisimo.Visible = false;
+            this.Kleisimo.Click += new System.EventHandler(this.Kleisimo_Click);
+            // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Silver;
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(195, 43);
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.groupBox2);
+            this.panel4.Controls.Add(this.groupBox1);
+            this.panel4.Location = new System.Drawing.Point(107, 49);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(661, 522);
+            this.panel4.Size = new System.Drawing.Size(758, 559);
             this.panel4.TabIndex = 3;
             // 
-            // pictureBox4
+            // groupBox2
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(125, 147);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(385, 270);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.groupBox2.Controls.Add(this.apoews);
+            this.groupBox2.Controls.Add(this.apo);
+            this.groupBox2.Controls.Add(this.all);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.onesel);
+            this.groupBox2.Controls.Add(this.ews);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.one);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.groupBox2.Location = new System.Drawing.Point(3, 24);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(453, 515);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Εκτύπωση";
+            this.groupBox2.Visible = false;
             // 
-            // button3
+            // apoews
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button3.Location = new System.Drawing.Point(21, 196);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 45);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Εκτύπωση";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.apoews.AutoSize = true;
+            this.apoews.Location = new System.Drawing.Point(42, 188);
+            this.apoews.Name = "apoews";
+            this.apoews.Size = new System.Drawing.Size(93, 24);
+            this.apoews.TabIndex = 7;
+            this.apoews.TabStop = true;
+            this.apoews.Text = "από-εώς";
+            this.apoews.UseVisualStyleBackColor = true;
+            // 
+            // apo
+            // 
+            this.apo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.apo.Location = new System.Drawing.Point(185, 227);
+            this.apo.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.apo.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.apo.Name = "apo";
+            this.apo.Size = new System.Drawing.Size(63, 27);
+            this.apo.TabIndex = 0;
+            this.apo.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // all
+            // 
+            this.all.AutoSize = true;
+            this.all.Location = new System.Drawing.Point(42, 125);
+            this.all.Name = "all";
+            this.all.Size = new System.Drawing.Size(155, 24);
+            this.all.TabIndex = 5;
+            this.all.TabStop = true;
+            this.all.Text = "όλες τις σελίδες";
+            this.all.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.Location = new System.Drawing.Point(91, 229);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "από:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.Location = new System.Drawing.Point(91, 267);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "εώς:";
+            // 
+            // onesel
+            // 
+            this.onesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.onesel.Location = new System.Drawing.Point(185, 332);
+            this.onesel.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.onesel.Name = "onesel";
+            this.onesel.Size = new System.Drawing.Size(63, 27);
+            this.onesel.TabIndex = 9;
+            this.onesel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // ews
+            // 
+            this.ews.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.ews.Location = new System.Drawing.Point(185, 267);
+            this.ews.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.ews.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ews.Name = "ews";
+            this.ews.Size = new System.Drawing.Size(63, 27);
+            this.ews.TabIndex = 3;
+            this.ews.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label3.Location = new System.Drawing.Point(6, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(295, 24);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Επιλέξτε σελίδες για εκτύπωση:";
+            // 
+            // one
+            // 
+            this.one.AutoSize = true;
+            this.one.Location = new System.Drawing.Point(42, 332);
+            this.one.Name = "one";
+            this.one.Size = new System.Drawing.Size(80, 24);
+            this.one.TabIndex = 6;
+            this.one.TabStop = true;
+            this.one.Text = "σελίδα";
+            this.one.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button1.Location = new System.Drawing.Point(21, 145);
+            this.button1.Location = new System.Drawing.Point(358, 456);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 45);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Προβολή";
+            this.button1.Size = new System.Drawing.Size(61, 40);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "ΟΚ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.groupBox1.Location = new System.Drawing.Point(26, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(725, 543);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Προβολή";
+            this.groupBox1.Visible = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            // 
+            // Ektup
+            // 
+            this.Ektup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Ektup.Location = new System.Drawing.Point(864, 271);
+            this.Ektup.Name = "Ektup";
+            this.Ektup.Size = new System.Drawing.Size(137, 45);
+            this.Ektup.TabIndex = 2;
+            this.Ektup.Text = "Εκτύπωση";
+            this.Ektup.UseVisualStyleBackColor = true;
+            this.Ektup.Click += new System.EventHandler(this.ektyp_Click);
+            // 
+            // Provoli
+            // 
+            this.Provoli.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Provoli.Location = new System.Drawing.Point(864, 174);
+            this.Provoli.Name = "Provoli";
+            this.Provoli.Size = new System.Drawing.Size(137, 45);
+            this.Provoli.TabIndex = 1;
+            this.Provoli.Text = "Προβολή";
+            this.Provoli.UseVisualStyleBackColor = true;
+            this.Provoli.Click += new System.EventHandler(this.Provoli_Click);
             // 
             // pictureBox3
             // 
@@ -784,6 +996,10 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.neasim);
+            this.tabPage7.Controls.Add(this.button3);
+            this.tabPage7.Controls.Add(this.listView2);
+            this.tabPage7.Controls.Add(this.label4);
             this.tabPage7.Controls.Add(this.pictureBox2);
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
@@ -792,6 +1008,120 @@
             this.tabPage7.TabIndex = 5;
             this.tabPage7.Text = "Notes";
             this.tabPage7.UseVisualStyleBackColor = true;
+            this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click);
+            // 
+            // neasim
+            // 
+            this.neasim.Controls.Add(this.button4);
+            this.neasim.Controls.Add(this.label5);
+            this.neasim.Controls.Add(this.richTextBox1);
+            this.neasim.Controls.Add(this.label6);
+            this.neasim.Controls.Add(this.textBox1);
+            this.neasim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.neasim.Location = new System.Drawing.Point(122, 82);
+            this.neasim.Name = "neasim";
+            this.neasim.Size = new System.Drawing.Size(636, 446);
+            this.neasim.TabIndex = 6;
+            this.neasim.TabStop = false;
+            this.neasim.Text = "Νέα Σημείωση";
+            this.neasim.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button4.Location = new System.Drawing.Point(470, 404);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(137, 36);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Αποθήκευση";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label5.Location = new System.Drawing.Point(19, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(146, 20);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Εισαγωγή τίτλου :";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(204, 100);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(403, 277);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label6.Location = new System.Drawing.Point(19, 100);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(179, 20);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Εισαγωγή σημείωσης :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.textBox1.Location = new System.Drawing.Point(204, 47);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(403, 27);
+            this.textBox1.TabIndex = 2;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button3.Location = new System.Drawing.Point(151, 556);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(245, 34);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Δημιουργία νέας σημείωσης";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView2.FullRowSelect = true;
+            this.listView2.GridLines = true;
+            this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem4,
+            listViewItem5,
+            listViewItem6});
+            this.listView2.Location = new System.Drawing.Point(151, 62);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(506, 428);
+            this.listView2.TabIndex = 3;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "ΣΗΜΕΙΩΣΗ";
+            this.columnHeader1.Width = 345;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "ΔΙΑΓΡΑΦΗ";
+            this.columnHeader2.Width = 157;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label4.Location = new System.Drawing.Point(132, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(294, 24);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Λίστα ήδη υπάρχων σημειώσεων";
             // 
             // pictureBox2
             // 
@@ -837,9 +1167,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.apo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onesel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ews)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.neasim.ResumeLayout(false);
+            this.neasim.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -901,8 +1238,31 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Ektup;
+        private System.Windows.Forms.Button Provoli;
+        private System.Windows.Forms.Button Kleisimo;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton apoews;
+        private System.Windows.Forms.NumericUpDown apo;
+        private System.Windows.Forms.RadioButton all;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown onesel;
+        private System.Windows.Forms.NumericUpDown ews;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton one;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox neasim;
+        private System.Windows.Forms.Button button4;
     }
 }
