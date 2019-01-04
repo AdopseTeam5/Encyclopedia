@@ -59,7 +59,7 @@
             this.S.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.S.Location = new System.Drawing.Point(-2, 2);
             this.S.Name = "S";
-            this.S.Size = new System.Drawing.Size(500, 526);
+            this.S.Size = new System.Drawing.Size(474, 533);
             this.S.TabIndex = 1;
             // 
             // pictureBox1
@@ -74,9 +74,10 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(115, 451);
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.linkLabel2.Location = new System.Drawing.Point(102, 461);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(235, 20);
+            this.linkLabel2.Size = new System.Drawing.Size(278, 24);
             this.linkLabel2.TabIndex = 7;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Δημιουργήστε νέο λογαριασμό";
@@ -86,7 +87,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.linkLabel1.Location = new System.Drawing.Point(126, 328);
+            this.linkLabel1.Location = new System.Drawing.Point(130, 345);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(214, 18);
             this.linkLabel1.TabIndex = 6;
@@ -96,10 +97,10 @@
             // 
             // loginbutton
             // 
-            this.loginbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.loginbutton.Location = new System.Drawing.Point(154, 379);
+            this.loginbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.74627F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.loginbutton.Location = new System.Drawing.Point(153, 379);
             this.loginbutton.Name = "loginbutton";
-            this.loginbutton.Size = new System.Drawing.Size(154, 41);
+            this.loginbutton.Size = new System.Drawing.Size(177, 48);
             this.loginbutton.TabIndex = 5;
             this.loginbutton.Text = "Eίσοδος";
             this.loginbutton.UseVisualStyleBackColor = true;
@@ -157,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 526);
+            this.ClientSize = new System.Drawing.Size(473, 531);
             this.Controls.Add(this.S);
             this.Name = "Formlogin";
             this.Text = "Είσοδος";
