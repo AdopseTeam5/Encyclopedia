@@ -222,7 +222,7 @@ SELECT Id, XMLData, LoadedDateTime FROM XMLwithOpenXML WHERE (Id = @Id)</Command
   <xs:element name="OPENXMLTestingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OPENXMLTestingDataSet" msprop:Generator_UserDSName="OPENXMLTestingDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ARTICLE" msprop:Generator_TableClassName="ARTICLEDataTable" msprop:Generator_TableVarName="tableARTICLE" msprop:Generator_TablePropName="ARTICLE" msprop:Generator_RowDeletingName="ARTICLERowDeleting" msprop:Generator_RowChangingName="ARTICLERowChanging" msprop:Generator_RowEvHandlerName="ARTICLERowChangeEventHandler" msprop:Generator_RowDeletedName="ARTICLERowDeleted" msprop:Generator_UserTableName="ARTICLE" msprop:Generator_RowChangedName="ARTICLERowChanged" msprop:Generator_RowEvArgName="ARTICLERowChangeEvent" msprop:Generator_RowClassName="ARTICLERow">
+        <xs:element name="ARTICLE" msprop:Generator_TableClassName="ARTICLEDataTable" msprop:Generator_TableVarName="tableARTICLE" msprop:Generator_RowChangedName="ARTICLERowChanged" msprop:Generator_TablePropName="ARTICLE" msprop:Generator_RowDeletingName="ARTICLERowDeleting" msprop:Generator_RowChangingName="ARTICLERowChanging" msprop:Generator_RowEvHandlerName="ARTICLERowChangeEventHandler" msprop:Generator_RowDeletedName="ARTICLERowDeleted" msprop:Generator_RowClassName="ARTICLERow" msprop:Generator_UserTableName="ARTICLE" msprop:Generator_RowEvArgName="ARTICLERowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -250,7 +250,7 @@ SELECT Id, XMLData, LoadedDateTime FROM XMLwithOpenXML WHERE (Id = @Id)</Command
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ARTICLES" msprop:Generator_TableClassName="ARTICLESDataTable" msprop:Generator_TableVarName="tableARTICLES" msprop:Generator_TablePropName="ARTICLES" msprop:Generator_RowDeletingName="ARTICLESRowDeleting" msprop:Generator_RowChangingName="ARTICLESRowChanging" msprop:Generator_RowEvHandlerName="ARTICLESRowChangeEventHandler" msprop:Generator_RowDeletedName="ARTICLESRowDeleted" msprop:Generator_UserTableName="ARTICLES" msprop:Generator_RowChangedName="ARTICLESRowChanged" msprop:Generator_RowEvArgName="ARTICLESRowChangeEvent" msprop:Generator_RowClassName="ARTICLESRow">
+        <xs:element name="ARTICLES" msprop:Generator_TableClassName="ARTICLESDataTable" msprop:Generator_TableVarName="tableARTICLES" msprop:Generator_RowChangedName="ARTICLESRowChanged" msprop:Generator_TablePropName="ARTICLES" msprop:Generator_RowDeletingName="ARTICLESRowDeleting" msprop:Generator_RowChangingName="ARTICLESRowChanging" msprop:Generator_RowEvHandlerName="ARTICLESRowChangeEventHandler" msprop:Generator_RowDeletedName="ARTICLESRowDeleted" msprop:Generator_RowClassName="ARTICLESRow" msprop:Generator_UserTableName="ARTICLES" msprop:Generator_RowEvArgName="ARTICLESRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" minOccurs="0" />
@@ -278,7 +278,7 @@ SELECT Id, XMLData, LoadedDateTime FROM XMLwithOpenXML WHERE (Id = @Id)</Command
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="category" msprop:Generator_TableClassName="categoryDataTable" msprop:Generator_TableVarName="tablecategory" msprop:Generator_TablePropName="category" msprop:Generator_RowDeletingName="categoryRowDeleting" msprop:Generator_RowChangingName="categoryRowChanging" msprop:Generator_RowEvHandlerName="categoryRowChangeEventHandler" msprop:Generator_RowDeletedName="categoryRowDeleted" msprop:Generator_UserTableName="category" msprop:Generator_RowChangedName="categoryRowChanged" msprop:Generator_RowEvArgName="categoryRowChangeEvent" msprop:Generator_RowClassName="categoryRow">
+        <xs:element name="category" msprop:Generator_TableClassName="categoryDataTable" msprop:Generator_TableVarName="tablecategory" msprop:Generator_RowChangedName="categoryRowChanged" msprop:Generator_TablePropName="category" msprop:Generator_RowDeletingName="categoryRowDeleting" msprop:Generator_RowChangingName="categoryRowChanging" msprop:Generator_RowEvHandlerName="categoryRowChangeEventHandler" msprop:Generator_RowDeletedName="categoryRowDeleted" msprop:Generator_RowClassName="categoryRow" msprop:Generator_UserTableName="category" msprop:Generator_RowEvArgName="categoryRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="cat_id" msprop:Generator_ColumnVarNameInTable="columncat_id" msprop:Generator_ColumnPropNameInRow="cat_id" msprop:Generator_ColumnPropNameInTable="cat_idColumn" msprop:Generator_UserColumnName="cat_id" type="xs:int" />
@@ -295,7 +295,7 @@ SELECT Id, XMLData, LoadedDateTime FROM XMLwithOpenXML WHERE (Id = @Id)</Command
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="XMLwithOpenXML" msprop:Generator_TableClassName="XMLwithOpenXMLDataTable" msprop:Generator_TableVarName="tableXMLwithOpenXML" msprop:Generator_TablePropName="XMLwithOpenXML" msprop:Generator_RowDeletingName="XMLwithOpenXMLRowDeleting" msprop:Generator_RowChangingName="XMLwithOpenXMLRowChanging" msprop:Generator_RowEvHandlerName="XMLwithOpenXMLRowChangeEventHandler" msprop:Generator_RowDeletedName="XMLwithOpenXMLRowDeleted" msprop:Generator_UserTableName="XMLwithOpenXML" msprop:Generator_RowChangedName="XMLwithOpenXMLRowChanged" msprop:Generator_RowEvArgName="XMLwithOpenXMLRowChangeEvent" msprop:Generator_RowClassName="XMLwithOpenXMLRow">
+        <xs:element name="XMLwithOpenXML" msprop:Generator_TableClassName="XMLwithOpenXMLDataTable" msprop:Generator_TableVarName="tableXMLwithOpenXML" msprop:Generator_RowChangedName="XMLwithOpenXMLRowChanged" msprop:Generator_TablePropName="XMLwithOpenXML" msprop:Generator_RowDeletingName="XMLwithOpenXMLRowDeleting" msprop:Generator_RowChangingName="XMLwithOpenXMLRowChanging" msprop:Generator_RowEvHandlerName="XMLwithOpenXMLRowChangeEventHandler" msprop:Generator_RowDeletedName="XMLwithOpenXMLRowDeleted" msprop:Generator_RowClassName="XMLwithOpenXMLRow" msprop:Generator_UserTableName="XMLwithOpenXML" msprop:Generator_RowEvArgName="XMLwithOpenXMLRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
