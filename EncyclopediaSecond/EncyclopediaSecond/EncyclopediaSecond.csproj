@@ -82,6 +82,7 @@
     <Compile Include="TyxaioLimma.Designer.cs">
       <DependentUpon>TyxaioLimma.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <Compile Include="UserManager.cs" />
     <Compile Include="Formlogin.cs">
       <SubType>Form</SubType>
@@ -115,19 +116,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProvoliBook.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ProvoliBook.Designer.cs">
-      <DependentUpon>ProvoliBook.cs</DependentUpon>
-    </Compile>
     <Compile Include="EktypisoBook.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="EktypisoBook.Designer.cs">
       <DependentUpon>EktypisoBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
     <Compile Include="XwrisSundesi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -171,9 +165,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ProvoliBook.resx">
-      <DependentUpon>ProvoliBook.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EktypisoBook.resx">
       <DependentUpon>EktypisoBook.cs</DependentUpon>
     </EmbeddedResource>
