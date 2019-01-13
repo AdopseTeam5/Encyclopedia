@@ -14,6 +14,16 @@ namespace EncyclopediaSecond
     
     public partial class User
     {
+        public User(int user_ID, string first_Name, string last_Name, string email, string password, bool admin)
+        {
+            User_ID = user_ID;
+            First_Name = first_Name;
+            Last_Name = last_Name;
+            Email = email;
+            Password = password;
+            Admin = admin;
+        }
+
         public int User_ID { get; set; }
         public string First_Name { get; set; }
         public string Last_Name { get; set; }

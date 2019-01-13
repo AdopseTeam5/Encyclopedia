@@ -31,6 +31,7 @@ namespace EncyclopediaSecond
         {
             return this.user;
         }
+        
 
         public void setUpCurrentUser(User user)
         {

@@ -32,9 +32,27 @@ namespace EncyclopediaSecond
         }
 
         private void loginbutton_Click(object sender, EventArgs e)
-        {
-            User user = new User("testMail", "testPass");
-            UserManager.Shared.setUpCurrentUser(user);
+        {   string fname_email = txtemail.Text;
+            string password = txtpass.Text;
+            OPENXMLTestingDataSet1TableAdapters.UsersTableAdapter user_login = new OPENXMLTestingDataSet1TableAdapters.UsersTableAdapter();
+            try
+            {
+                var access = user_login.GetLogin(fname_email, fname_email, password).SingleOrDefault();
+                
+
+               
+                User user = new User(access.User_ID,access.First_Name,access.Last_Name,access.Email,access.Password,access.Admin);
+                UserManager.Shared.setUpCurrentUser(user);
+            }
+            catch (InvalidOperationException ex)
+            {
+                throw new InvalidOperationException("ΛαΘος Κωδικος", ex);
+            }
+
+           
+            
+            
+            
         }
     }
 }

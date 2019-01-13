@@ -5563,7 +5563,7 @@ SELECT User_ID, First_Name, Last_Name, Email, Password, Admin FROM Users WHERE (
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT User_ID, First_Name, Last_Name, Email, Password, Admin FROM dbo.Users";
@@ -5582,8 +5582,21 @@ SELECT User_ID, First_Name, Last_Name, Email, Password, Admin FROM Users WHERE (
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT        MAX(User_ID) AS User_ID\r\nFROM            Users";
+            this._commandCollection[2].CommandText = @"SELECT        User_ID, First_Name, Last_Name, Email, Password, Admin
+FROM            Users
+WHERE        (Email = @Email) AND (Password = @Password)
+UNION
+SELECT        User_ID, First_Name, Last_Name, Email, Password, Admin
+FROM            Users AS Users_1
+WHERE        (First_Name = @First_Name) AND (Password = @Password)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.NChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT        MAX(User_ID) AS User_ID\r\nFROM            Users";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5614,8 +5627,37 @@ SELECT User_ID, First_Name, Last_Name, Email, Password, Admin FROM Users WHERE (
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual OPENXMLTestingDataSet1.UsersDataTable GetMAX() {
+        public virtual OPENXMLTestingDataSet1.UsersDataTable GetLogin(string Email, string Password, string First_Name) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((Email == null)) {
+                throw new global::System.ArgumentNullException("Email");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Email));
+            }
+            if ((Password == null)) {
+                throw new global::System.ArgumentNullException("Password");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Password));
+            }
+            if ((First_Name == null)) {
+                throw new global::System.ArgumentNullException("First_Name");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(First_Name));
+            }
+            OPENXMLTestingDataSet1.UsersDataTable dataTable = new OPENXMLTestingDataSet1.UsersDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual OPENXMLTestingDataSet1.UsersDataTable GetMAX() {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
             OPENXMLTestingDataSet1.UsersDataTable dataTable = new OPENXMLTestingDataSet1.UsersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
