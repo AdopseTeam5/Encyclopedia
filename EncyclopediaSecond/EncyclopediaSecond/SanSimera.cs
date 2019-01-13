@@ -10,24 +10,11 @@ using System.Windows.Forms;
 
 namespace EncyclopediaSecond
 {
-    public partial class AllagiKwdikou : UserControl
+    public partial class SanSimera : UserControl
     {
-        public AllagiKwdikou()
+        public SanSimera()
         {
             InitializeComponent();
-        }
-
-        private void label36_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        { 
-            
-           
-
-            
         }
     }
 }
