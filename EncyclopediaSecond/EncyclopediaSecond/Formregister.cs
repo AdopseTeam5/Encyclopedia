@@ -119,22 +119,32 @@ namespace EncyclopediaSecond
         private void Formregister_FormClosed(object sender, FormClosedEventArgs e)
         {
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
+            OPENXMLTestingDataSet1TableAdapters.UsersTableAdapter new_user = new OPENXMLTestingDataSet1TableAdapters.UsersTableAdapter();
+            
             String email=textBox3.Text;
             String fname = textBox1.Text;
             String lname = textBox2.Text;
             String pass = textBox4.Text;
-
-
+            var maxid = new_user.GetMAX();
+            int maxidint = Int32.Parse(maxid.User_IDColumn.ToString());
+            maxidint = +1;
             
+
+
+
+
+
+
             if (checkall())
             {
                 if (checkKwdikoi())
                 {
-                    //kane eggrafi
-                    User u = new User(email, pass, fname, lname);
+
+                    new_user.Add_New_User(maxidint, fname, lname, email, pass);
+
 
                 }
 

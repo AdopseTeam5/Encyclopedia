@@ -16,8 +16,13 @@ namespace EncyclopediaSecond
         {
             InitializeComponent();
         }
-
+        
         private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }

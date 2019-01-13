@@ -1,4 +1,7 @@
-﻿namespace EncyclopediaSecond
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace EncyclopediaSecond
 {
     partial class arxiki
     {
@@ -115,11 +118,12 @@
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(768, 643);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Αρχική Σελίδα";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // groupBox4
             // 
@@ -618,7 +622,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "arxiki";
             this.Size = new System.Drawing.Size(776, 669);
             this.tabControl1.ResumeLayout(false);
@@ -702,5 +706,51 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+
+        public IContainer Components { get => components; set => components = value; }
+        public TabControl TabControl1 { get => tabControl1; set => tabControl1 = value; }
+        public TabPage TabPage1 { get => tabPage1; set => tabPage1 = value; }
+        public GroupBox GroupBox4 { get => groupBox4; set => groupBox4 = value; }
+        public TableLayoutPanel TableLayoutPanel9 { get => tableLayoutPanel9; set => tableLayoutPanel9 = value; }
+        public PictureBox PictureBox9 { get => pictureBox9; set => pictureBox9 = value; }
+        public Label Label18 { get => label18; set => label18 = value; }
+        public Label Label19 { get => label19; set => label19 = value; }
+        public TableLayoutPanel TableLayoutPanel8 { get => tableLayoutPanel8; set => tableLayoutPanel8 = value; }
+        public PictureBox PictureBox8 { get => pictureBox8; set => pictureBox8 = value; }
+        public Label Label16 { get => label16; set => label16 = value; }
+        public Label Label17 { get => label17; set => label17 = value; }
+        public TableLayoutPanel TableLayoutPanel7 { get => tableLayoutPanel7; set => tableLayoutPanel7 = value; }
+        public PictureBox PictureBox7 { get => pictureBox7; set => pictureBox7 = value; }
+        public Label Label14 { get => label14; set => label14 = value; }
+        public Label Label15 { get => label15; set => label15 = value; }
+        public GroupBox GroupBox3 { get => groupBox3; set => groupBox3 = value; }
+        public TableLayoutPanel TableLayoutPanel6 { get => tableLayoutPanel6; set => tableLayoutPanel6 = value; }
+        public PictureBox PictureBox6 { get => pictureBox6; set => pictureBox6 = value; }
+        public Label Label12 { get => label12; set => label12 = value; }
+        public Label Label13 { get => label13; set => label13 = value; }
+        public TableLayoutPanel TableLayoutPanel5 { get => tableLayoutPanel5; set => tableLayoutPanel5 = value; }
+        public PictureBox PictureBox5 { get => pictureBox5; set => pictureBox5 = value; }
+        public Label Label10 { get => label10; set => label10 = value; }
+        public Label Label11 { get => label11; set => label11 = value; }
+        public TableLayoutPanel TableLayoutPanel4 { get => tableLayoutPanel4; set => tableLayoutPanel4 = value; }
+        public PictureBox PictureBox4 { get => pictureBox4; set => pictureBox4 = value; }
+        public Label Label8 { get => label8; set => label8 = value; }
+        public Label Label9 { get => label9; set => label9 = value; }
+        public GroupBox GroupBox1 { get => groupBox1; set => groupBox1 = value; }
+        public TableLayoutPanel TableLayoutPanel3 { get => tableLayoutPanel3; set => tableLayoutPanel3 = value; }
+        public PictureBox PictureBox3 { get => pictureBox3; set => pictureBox3 = value; }
+        public Label Label6 { get => label6; set => label6 = value; }
+        public Label Label7 { get => label7; set => label7 = value; }
+        public TableLayoutPanel TableLayoutPanel2 { get => tableLayoutPanel2; set => tableLayoutPanel2 = value; }
+        public PictureBox PictureBox2 { get => pictureBox2; set => pictureBox2 = value; }
+        public Label Label4 { get => label4; set => label4 = value; }
+        public Label Label5 { get => label5; set => label5 = value; }
+        public TableLayoutPanel TableLayoutPanel1 { get => tableLayoutPanel1; set => tableLayoutPanel1 = value; }
+        public PictureBox PictureBox1 { get => pictureBox1; set => pictureBox1 = value; }
+        public Label Label2 { get => label2; set => label2 = value; }
+        public Label Label3 { get => label3; set => label3 = value; }
+        public Label Label1 { get => label1; set => label1 = value; }
     }
+
+
 }

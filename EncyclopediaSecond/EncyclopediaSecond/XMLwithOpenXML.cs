@@ -12,18 +12,10 @@ namespace EncyclopediaSecond
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class XMLwithOpenXML
     {
-        public int User_ID { get; set; }
-        public string First_Name { get; set; }
-        public string Last_Name { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public bool Admin { get; set; }
-
-        
+        public int Id { get; set; }
+        public string XMLData { get; set; }
+        public Nullable<System.DateTime> LoadedDateTime { get; set; }
     }
-   
-   
-    
 }

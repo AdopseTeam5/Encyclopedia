@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OPENXMLTestingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="article">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="100" />
+          <Property Name="title" Type="nvarchar" MaxLength="100" />
+          <Property Name="kimeno" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="cat_id" />
+          </Key>
+          <Property Name="cat_id" Type="int" Nullable="false" />
+          <Property Name="cat_title" Type="nvarchar(max)" />
+          <Property Name="cat_pages" Type="int" Nullable="false" />
+          <Property Name="cat_subcats" Type="int" Nullable="false" />
+          <Property Name="cat_files" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\RAPHAEL\SOURCE\REPOS\NEW FOLDER\ENCYCLOPEDIA\ENCYCLOPEDIASECOND\ENCYCLOPEDIASECOND\OPENXMLTESTING.MDF.dbo.categorylinks' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="categorylinks">
+          <Key>
+            <PropertyRef Name="cl_from" />
+            <PropertyRef Name="cl_to" />
+            <PropertyRef Name="cl_sortkey" />
+            <PropertyRef Name="cl_timestamp" />
+            <PropertyRef Name="cl_sortkey_perfix" />
+            <PropertyRef Name="cl_collation" />
+            <PropertyRef Name="cl_type" />
+          </Key>
+          <Property Name="cl_from" Type="int" Nullable="false" />
+          <Property Name="cl_to" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="cl_sortkey" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="cl_timestamp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="cl_sortkey_perfix" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="cl_collation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="cl_type" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\RAPHAEL\SOURCE\REPOS\NEW FOLDER\ENCYCLOPEDIA\ENCYCLOPEDIASECOND\ENCYCLOPEDIASECOND\OPENXMLTESTING.MDF.dbo.image' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="image">
+          <Key>
+            <PropertyRef Name="img_name" />
+            <PropertyRef Name="img_size" />
+            <PropertyRef Name="img_width" />
+            <PropertyRef Name="img_height" />
+            <PropertyRef Name="img_metadata" />
+            <PropertyRef Name="img_bits" />
+            <PropertyRef Name="img_major_mime" />
+            <PropertyRef Name="img_minor_mime" />
+            <PropertyRef Name="img_description" />
+            <PropertyRef Name="img_description_id" />
+            <PropertyRef Name="img_user" />
+            <PropertyRef Name="img_user_text" />
+            <PropertyRef Name="img_actor" />
+            <PropertyRef Name="img_timestamp" />
+            <PropertyRef Name="img_sha1" />
+            <PropertyRef Name="img_deleted" />
+          </Key>
+          <Property Name="img_name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="img_size" Type="int" Nullable="false" />
+          <Property Name="img_width" Type="int" Nullable="false" />
+          <Property Name="img_height" Type="int" Nullable="false" />
+          <Property Name="img_metadata" Type="varchar(max)" Nullable="false" />
+          <Property Name="img_bits" Type="int" Nullable="false" />
+          <Property Name="img_media_type" Type="varchar" MaxLength="50" />
+          <Property Name="img_major_mime" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="img_minor_mime" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="img_description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="img_description_id" Type="bigint" Nullable="false" />
+          <Property Name="img_user" Type="int" Nullable="false" />
+          <Property Name="img_user_text" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="img_actor" Type="bigint" Nullable="false" />
+          <Property Name="img_timestamp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="img_sha1" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="img_deleted" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\RAPHAEL\SOURCE\REPOS\NEW FOLDER\ENCYCLOPEDIA\ENCYCLOPEDIASECOND\ENCYCLOPEDIASECOND\OPENXMLTESTING.MDF.dbo.imagelinks' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="imagelinks">
+          <Key>
+            <PropertyRef Name="il_from" />
+            <PropertyRef Name="il_to" />
+            <PropertyRef Name="il_from_namespace" />
+          </Key>
+          <Property Name="il_from" Type="int" Nullable="false" />
+          <Property Name="il_to" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="il_from_namespace" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="int" Nullable="false" />
+          <Property Name="First_Name" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="Last_Name" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Admin" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="XMLwithOpenXML">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="XMLData" Type="xml" />
+          <Property Name="LoadedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="OPENXMLTestingModelStoreContainer">
+          <EntitySet Name="article" EntityType="Self.article" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="XMLwithOpenXML" EntityType="Self.XMLwithOpenXML" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="categorylinks" EntityType="Self.categorylinks" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [categorylinks].[cl_from] AS [cl_from], 
+    [categorylinks].[cl_to] AS [cl_to], 
+    [categorylinks].[cl_sortkey] AS [cl_sortkey], 
+    [categorylinks].[cl_timestamp] AS [cl_timestamp], 
+    [categorylinks].[cl_sortkey_perfix] AS [cl_sortkey_perfix], 
+    [categorylinks].[cl_collation] AS [cl_collation], 
+    [categorylinks].[cl_type] AS [cl_type]
+    FROM [dbo].[categorylinks] AS [categorylinks]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="image" EntityType="Self.image" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [image].[img_name] AS [img_name], 
+    [image].[img_size] AS [img_size], 
+    [image].[img_width] AS [img_width], 
+    [image].[img_height] AS [img_height], 
+    [image].[img_metadata] AS [img_metadata], 
+    [image].[img_bits] AS [img_bits], 
+    [image].[img_media_type] AS [img_media_type], 
+    [image].[img_major_mime] AS [img_major_mime], 
+    [image].[img_minor_mime] AS [img_minor_mime], 
+    [image].[img_description] AS [img_description], 
+    [image].[img_description_id] AS [img_description_id], 
+    [image].[img_user] AS [img_user], 
+    [image].[img_user_text] AS [img_user_text], 
+    [image].[img_actor] AS [img_actor], 
+    [image].[img_timestamp] AS [img_timestamp], 
+    [image].[img_sha1] AS [img_sha1], 
+    [image].[img_deleted] AS [img_deleted]
+    FROM [dbo].[image] AS [image]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="imagelinks" EntityType="Self.imagelinks" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [imagelinks].[il_from] AS [il_from], 
+    [imagelinks].[il_to] AS [il_to], 
+    [imagelinks].[il_from_namespace] AS [il_from_namespace]
+    FROM [dbo].[imagelinks] AS [imagelinks]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OPENXMLTestingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="article">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="url" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="kimeno" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="cat_id" />
+          </Key>
+          <Property Name="cat_id" Type="Int32" Nullable="false" />
+          <Property Name="cat_title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="cat_pages" Type="Int32" Nullable="false" />
+          <Property Name="cat_subcats" Type="Int32" Nullable="false" />
+          <Property Name="cat_files" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="Int32" Nullable="false" />
+          <Property Name="First_Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Admin" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="XMLwithOpenXML">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="XMLData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LoadedDateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="categorylink">
+          <Key>
+            <PropertyRef Name="cl_from" />
+            <PropertyRef Name="cl_to" />
+            <PropertyRef Name="cl_sortkey" />
+            <PropertyRef Name="cl_timestamp" />
+            <PropertyRef Name="cl_sortkey_perfix" />
+            <PropertyRef Name="cl_collation" />
+            <PropertyRef Name="cl_type" />
+          </Key>
+          <Property Name="cl_from" Type="Int32" Nullable="false" />
+          <Property Name="cl_to" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="cl_sortkey" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="cl_timestamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="cl_sortkey_perfix" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="cl_collation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="cl_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="image">
+          <Key>
+            <PropertyRef Name="img_name" />
+            <PropertyRef Name="img_size" />
+            <PropertyRef Name="img_width" />
+            <PropertyRef Name="img_height" />
+            <PropertyRef Name="img_metadata" />
+            <PropertyRef Name="img_bits" />
+            <PropertyRef Name="img_major_mime" />
+            <PropertyRef Name="img_minor_mime" />
+            <PropertyRef Name="img_description" />
+            <PropertyRef Name="img_description_id" />
+            <PropertyRef Name="img_user" />
+            <PropertyRef Name="img_user_text" />
+            <PropertyRef Name="img_actor" />
+            <PropertyRef Name="img_timestamp" />
+            <PropertyRef Name="img_sha1" />
+            <PropertyRef Name="img_deleted" />
+          </Key>
+          <Property Name="img_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="img_size" Type="Int32" Nullable="false" />
+          <Property Name="img_width" Type="Int32" Nullable="false" />
+          <Property Name="img_height" Type="Int32" Nullable="false" />
+          <Property Name="img_metadata" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="img_bits" Type="Int32" Nullable="false" />
+          <Property Name="img_media_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="img_major_mime" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="img_minor_mime" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="img_description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="img_description_id" Type="Int64" Nullable="false" />
+          <Property Name="img_user" Type="Int32" Nullable="false" />
+          <Property Name="img_user_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="img_actor" Type="Int64" Nullable="false" />
+          <Property Name="img_timestamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="img_sha1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="img_deleted" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityType Name="imagelink">
+          <Key>
+            <PropertyRef Name="il_from" />
+            <PropertyRef Name="il_to" />
+            <PropertyRef Name="il_from_namespace" />
+          </Key>
+          <Property Name="il_from" Type="Int32" Nullable="false" />
+          <Property Name="il_to" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="il_from_namespace" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OPENXMLTestingEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="articles" EntityType="Self.article" />
+          <EntitySet Name="categories" EntityType="Self.category" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="XMLwithOpenXMLs" EntityType="Self.XMLwithOpenXML" />
+          <EntitySet Name="categorylinks" EntityType="Self.categorylink" />
+          <EntitySet Name="images" EntityType="Self.image" />
+          <EntitySet Name="imagelinks" EntityType="Self.imagelink" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OPENXMLTestingModelStoreContainer" CdmEntityContainer="OPENXMLTestingEntities1">
+          <EntitySetMapping Name="articles">
+            <EntityTypeMapping TypeName="OPENXMLTestingModel.article">
+              <MappingFragment StoreEntitySet="article">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="kimeno" ColumnName="kimeno" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="categories">
+            <EntityTypeMapping TypeName="OPENXMLTestingModel.category">
+              <MappingFragment StoreEntitySet="category">
+                <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+                <ScalarProperty Name="cat_title" ColumnName="cat_title" />
+                <ScalarProperty Name="cat_pages" ColumnName="cat_pages" />
+                <ScalarProperty Name="cat_subcats" ColumnName="cat_subcats" />
+                <ScalarProperty Name="cat_files" ColumnName="cat_files" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="OPENXMLTestingModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Admin" ColumnName="Admin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="XMLwithOpenXMLs">
+            <EntityTypeMapping TypeName="OPENXMLTestingModel.XMLwithOpenXML">
+              <MappingFragment StoreEntitySet="XMLwithOpenXML">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="XMLData" ColumnName="XMLData" />
+                <ScalarProperty Name="LoadedDateTime" ColumnName="LoadedDateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="categorylinks">
+            <EntityTypeMapping TypeName="OPENXMLTestingModel.categorylink">
+              <MappingFragment StoreEntitySet="categorylinks">
+                <ScalarProperty Name="cl_from" ColumnName="cl_from" />
+                <ScalarProperty Name="cl_to" ColumnName="cl_to" />
+                <ScalarProperty Name="cl_sortkey" ColumnName="cl_sortkey" />
+                <ScalarProperty Name="cl_timestamp" ColumnName="cl_timestamp" />
+                <ScalarProperty Name="cl_sortkey_perfix" ColumnName="cl_sortkey_perfix" />
+                <ScalarProperty Name="cl_collation" ColumnName="cl_collation" />
+                <ScalarProperty Name="cl_type" ColumnName="cl_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="images">
+            <EntityTypeMapping TypeName="OPENXMLTestingModel.image">
+              <MappingFragment StoreEntitySet="image">
+                <ScalarProperty Name="img_name" ColumnName="img_name" />
+                <ScalarProperty Name="img_size" ColumnName="img_size" />
+                <ScalarProperty Name="img_width" ColumnName="img_width" />
+                <ScalarProperty Name="img_height" ColumnName="img_height" />
+                <ScalarProperty Name="img_metadata" ColumnName="img_metadata" />
+                <ScalarProperty Name="img_bits" ColumnName="img_bits" />
+                <ScalarProperty Name="img_media_type" ColumnName="img_media_type" />
+                <ScalarProperty Name="img_major_mime" ColumnName="img_major_mime" />
+                <ScalarProperty Name="img_minor_mime" ColumnName="img_minor_mime" />
+                <ScalarProperty Name="img_description" ColumnName="img_description" />
+                <ScalarProperty Name="img_description_id" ColumnName="img_description_id" />
+                <ScalarProperty Name="img_user" ColumnName="img_user" />
+                <ScalarProperty Name="img_user_text" ColumnName="img_user_text" />
+                <ScalarProperty Name="img_actor" ColumnName="img_actor" />
+                <ScalarProperty Name="img_timestamp" ColumnName="img_timestamp" />
+                <ScalarProperty Name="img_sha1" ColumnName="img_sha1" />
+                <ScalarProperty Name="img_deleted" ColumnName="img_deleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="imagelinks">
+            <EntityTypeMapping TypeName="OPENXMLTestingModel.imagelink">
+              <MappingFragment StoreEntitySet="imagelinks">
+                <ScalarProperty Name="il_from" ColumnName="il_from" />
+                <ScalarProperty Name="il_to" ColumnName="il_to" />
+                <ScalarProperty Name="il_from_namespace" ColumnName="il_from_namespace" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

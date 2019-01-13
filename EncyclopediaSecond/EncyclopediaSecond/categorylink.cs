@@ -12,18 +12,14 @@ namespace EncyclopediaSecond
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class categorylink
     {
-        public int User_ID { get; set; }
-        public string First_Name { get; set; }
-        public string Last_Name { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public bool Admin { get; set; }
-
-        
+        public int cl_from { get; set; }
+        public string cl_to { get; set; }
+        public string cl_sortkey { get; set; }
+        public string cl_timestamp { get; set; }
+        public string cl_sortkey_perfix { get; set; }
+        public string cl_collation { get; set; }
+        public string cl_type { get; set; }
     }
-   
-   
-    
 }
